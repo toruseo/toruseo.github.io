@@ -1,0 +1,302 @@
+\documentclass[10pt,a4paper,roman,dvipdfmx]{moderncv}
+\moderncvstyle{empty}
+\moderncvcolor{black}
+
+\usepackage{natbib} % citation
+\bibpunct[]{}{)}{),}{n}{}{)} 
+\renewcommand\harvarditem[4][]%
+    {\bibitem[#2(#3)]{#4}}
+\usepackage{bibentry}
+\renewcommand{\citeauthoryear}{} 
+\usepackage{xstring}
+\usepackage{indent}
+\usepackage{newtxtext}
+
+\let\originalbibitem\bibitem
+\def\bibitem#1#2\par{%
+  \noexpandarg%
+  \originalbibitem{#1}%
+  \IfSubStr{#2}{Seo,~T.}{%
+  	\StrSubstitute{#2}{Seo,~T.}{\underline{Seo,~T.}}%
+  }{%
+  \StrSubstitute{#2}{瀬尾亨}{\underline{瀬尾亨}}%
+  }%
+\par}
+
+\usepackage{lastpage}
+\cfoot{{\thepage/\pageref*{LastPage}}}
+\usepackage[dvipdfmx,%
+  pdftitle={cv},% タイトル
+  pdfsubject={cv},% サブタイトル
+  pdfauthor={tseo},% 作成者
+  pdfkeywords={cv},% キーワード
+  colorlinks=false,
+  allbordercolors={0 1 1},
+  pdfborderstyle={/S/U/W 1},
+  setpagesize=false,
+  pdfstartview=FitH
+]{hyperref}
+
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage[dvipdfmx]{graphicx,color}
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage[itemindent=0em, leftmargin=2.5em, labelwidth=3em, itemsep=2pt, parsep=0em]{etaremune}
+\renewcommand{\labelenumi}{{\sffamily \theenumi.}}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=3.5em, noitemsep, topsep=0em, font=\small\sffamily}
+\setlist[description]{leftmargin=3.5em, nosep, topsep=0em}
+
+\hyphenpenalty=1000\relax
+\exhyphenpenalty=1000\relax
+\sloppy
+
+% personal data
+\name{Toru}{Seo}
+\title{Curriculum Vitae, as of \today}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+
+\section{Personal Information}
+\cvitem{Name}{Toru SEO}
+\cvitem{Name in Japanese}{瀬尾 亨（セオ トオル）}
+
+\section{Affiliation}
+\cventry{}{Assistant Professor}{Regional Planning and Information Lab., Department of Civil Engineering, School of Engineering, The University of Tokyo, Japan}{}{}{}
+
+\section{Contact}
+\cvitem{E-mail}{seo\{at\}civil.t.u-tokyo.ac.jp}
+\cvitem{Address}{Faculty of Engineering Building \#1 Room \#324, 7-3-1 Hongo, Bunkyo-ku, Tokyo 113-8656, Japan}
+\cvitem{Phone}{+81-3-5841-8090}
+\cvitem{Web page}{\href{https://toruseo.github.io/index\_en.html}{https://toruseo.github.io/index\_en.html}}
+\cvitem{ORCID}{\href{http://orcid.org/0000-0001-9767-7218}{0000-0001-9767-7218}}
+\cvitem{Web of Science ResearcherID}{\href{https://publons.com/researcher/2257548/toru-seo/}{I-3748-2016}}
+\cvitem{Scopus Author ID}{\href{https://www.scopus.com/authid/detail.uri?authorId=56545182800}{56545182800}}
+\cvitem{ResearchGate}{\href{https://www.researchgate.net/profile/Toru\_Seo2}{https://www.researchgate.net/profile/Toru\_Seo2}}
+\cvitem{Google Scholar}{\href{https://scholar.google.com/citations?user=CAxkSpwAAAAJ}{https://scholar.google.com/citations?user=CAxkSpwAAAAJ}}
+
+\section{Degree}
+\cventry{2015-09-25}{Doctor of Engineering}{Department of Civil Engineering, Graduate School of Science and Engineering, Tokyo Institute of Technology, Japan}{}{}{}
+
+\section{Working Experience}
+\cventry{2018-06/}{Assistant Professor}{The University of Tokyo, Japan}{}{}{%}
+	\begin{description}
+		\item - Traffic state estimation
+		\item - Traffic flow theory
+		\item - Mobile sensing
+		\item - Remote sensing
+		\item - Congestion pricing
+	\end{description}}
+\cventry{2016-04/2018-05}{Research Staff}{Tokyo Institute of Technology, Japan}{}{}{%}
+	\begin{description}
+		\item - Traffic state estimation
+		\item - Traffic flow theory
+		\item - Behavioral data collection
+		\item - Social adaptation of emerging mobility systems
+	\end{description}}
+\cventry{2017-08/2018-05}{Research Associate}{University of Michigan, The United States}{}{}{%}
+	\begin{description}
+		\item - Departure time choice equilibrium
+		\item - Static network traffic equilibrium
+		\item - Congestion pricing
+		\item - Connected vehicle data
+	\end{description}}
+\cventry{2017-06/2017-08}{Visiting Scholar}{University of Michigan, The United States}{}{}{%}
+	\begin{description}
+		\item - Something interesting
+	\end{description}}
+\cventry{2015-10/2016-03}{Research Fellow (PD)}{Japan Society for the Promotion of Science, Japan}{}{}{%}
+	\begin{description}
+		\item - Traffic state estimation
+		\item - Traffic flow theory
+		\item - Mobile sensing
+	\end{description}}
+\cventry{2014-04/2015-09}{Research Fellow (DC2)}{Japan Society for the Promotion of Science, Japan}{}{}{%}
+	\begin{description}
+		\item - Traffic state estimation
+		\item - Mobile sensing
+	\end{description}}
+
+\section{Education}
+\cventry{2015-09}{Dr.Eng.}{Department of Civil Engineering, Graduate School of Science and Engineering, Tokyo Institute of Technology, Japan}{}{}{%}
+	\begin{description}
+		\item \textsf{Doctoral dissertation:} \href{http://transport-titech.jp/thesis/TSU-DC2015-009.pdf}{Traffic estimation with vehicles observing other vehicles}
+		\item \textsf{Supervisor:} Prof.~Yasuo Asakura
+	\end{description}}
+\cventry{2013-03}{M.Eng.}{Department of Civil Engineering, Graduate School of Science and Engineering, Tokyo Institute of Technology, Japan}{}{}{%}
+	\begin{description}
+		\item \textsf{Master thesis:} Traffic state estimation with Lagrangian observation (in Japanese)
+		\item \textsf{Supervisors:} Prof.~Yasuo Asakura and Dr.~Daisuke Fukuda
+	\end{description}}
+\cventry{2011-03}{B.Eng.}{Department of Civil and Environmental Engineering, School of Engineering, Tokyo Institute of Technology, Japan}{}{}{%}
+	\begin{description}
+		\item \textsf{Graduation thesis:} Pedestrian behavior modeling in a train station based on the concept of ``Plan-Action'' (in Japanese)
+		\item \textsf{Supervisor:} Dr.~Daisuke Fukuda
+	\end{description}}
+
+\section{Honors and Awards}
+\cventry{2017-11-04}{Outstanding Paper Award}{Committee of Infrastructure Planning and Management, Japan Society of Civil Engineers}{}{}{}%
+\cventry{2017-07}{\href{https://www.journals.elsevier.com/transportation-research-part-c-emerging-technologies/awards}{TRC Best Paper Award}}{Transportation Research Part C: Emerging Technologies}{}{}{}%
+\cventry{2016-11-25}{\href{http://www.issr-kyoto.or.jp/event/fund/result/no12/index.html}{Kometani--Sasaki Prize (for Dissertation)}}{Institute of Systems Science Research}{}{}{}%
+\cventry{2016-06-20}{\href{http://www.jste.or.jp/Books/ronbunsho.pdf}{The 30th Japan Society of Traffic Engineers Paper Award}}{Japan Society of Traffic Engineers}{}{}{}
+\cventry{2015-09-16}{\href{http://sites.ieee.org/itss/files/2016/01/V18N1January2016.pdf}{Best Paper Award}}{IEEE 18th International Conference on Intelligent Transportation Systems}{}{}{}
+\cventry{2014-08-08}{\href{http://www.jste.or.jp/Activity/happyokai34.html}{Research Encouragement Award}}{The 34th Conference of Japan Society of Traffic Engineers}{}{}{}
+\cventry{2013-12-05}{\href{http://www.road.or.jp/conference/data/30excellent_award.pdf}{Outstanding Paper Award}}{The 30th Japan Road Conference}{}{}{}
+
+\section{Competitive Research Funding}
+\subsection{Ongoing}
+\cventry{2019-04/2022-03}{KAKENHI Grant-in-Aid for Scientific Research (B), Japan Society for the Promotion of Science}{\href{https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-19H02268/}{Traffic flow optimization by intervention control to automated vehicles}}{PI: Yasuhiro Shiomi, Total budget: 1,800kJPY}{}{}
+\cventry{2019-04/2022-03}{Research Fund by Committee on Advanced Road Technology, Ministry of Land, Infrastructure, Transport and Tourism, Japan}{Facility location and transportation management considering multi-scale modal cooperation}{PI: Takahiko Kusakabe, Total budget: 1,650kJPY}{}{}
+\cventry{2018-04/2021-03}{Research Fund by Committee on Advanced Road Technology, Ministry of Land, Infrastructure, Transport and Tourism, Japan}{Tourism Congestion Management using Learning-based Monitoring and Prediction of Traffic}{PI: Takashi Fuse, Total budget: 6,000kJPY}{}{}
+\cventry{2017-04/2021-03}{KAKENHI Grant-in-Aid for Scientific Research (A), Japan Society for the Promotion of Science}{\href{https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-17H01297/}{Research on mathematical models for management of large-scale transportation network under mega disaster}}{PI: Yasuo Asakura, Total budget: 700kJPY}{}{}
+\cventry{2017-04/2020-03}{KAKENHI Grant-in-Aid for Scientific Research (B), Japan Society for the Promotion of Science}{\href{https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-17H03320/}{Integrated Analytical Modeling of Urban Rail Transit System with High-Frequent Operations}}{PI: Daisuke Fukuda, Total budget: 1,200kJPY}{}{}
+\cventry{2016-04/2020-03}{KAKENHI Grant-in-Aid for Young Scientists (B), Japan Society for the Promotion of Science}{\href{https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-16K18164/}{Development and verification of model describing spatiotemporal dynamics of traffic flow consists of heterogeneous vehicles}}{PI: \underline{Toru Seo}, Total budget: 3,200kJPY}{}{}
+
+\subsection{Completed}
+\cventry{2017-04/2019-03}{KAKENHI Grant-in-Aid for Challenging Research (Exploratory), Japan Society for the Promotion of Science}{\href{https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-17K18949/}{Market diffusion and social influences of automated cars: Integrated approach from traffic engineering and transport economics}}{PI: Daisuke Fukuda, Total budget: 600kJPY}{}{}
+\cventry{2014-04/2016-03}{KAKENHI Grant-in-Aid for JSPS Fellows, Japan Society for the Promotion of Science}{\href{https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-14J10218/}{Road network traffic state estimation using information from cameras on probe vehicles}}{PI: \underline{Toru Seo}, Total budget: 1,700kJPY}{}{}
+
+\section{Affiliated Societies}
+\cvitem{}{IEEE, IEEE Intelligent Transportation Systems Society}
+\cvitem{}{Japan Society of Civil Engineers}
+\cvitem{}{Japan Society of Traffic Engineers}
+\cvitem{}{Information Processing Society of Japan}
+
+\section{Academic Services}
+
+\subsection{Editor}
+\cventry{2017}{JSTE Traffic Engineering, Vol.52, No.4 (Guest editor)}{}{}{}{}
+
+\subsection{Journal reviewer}
+
+\cvitem{}{Transportation Research Part A: Policy and Practice, Transportation Research Part B: Methodological, Transportation Research Part C: Emerging Technologies, IEEE Transactions on Intelligent Transportation Systems, IEEE Intelligent Transportation Systems Magazine, IEEE Transactions on Vehicular Technology, IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences, IET Intelligent Transportation System, Travel Behaviour and Society, Sensors, Entropy, MethodsX, Asian Transportation Studies, Journal of Japan Society of Civil Engineers, Ser.~D3, JSTE Journal of Traffic Engineering}
+
+
+\subsection{Conference session chair}
+\cventry{2018, 2019}{JSCE Infrastructure Planning and Management Conference}{}{}{}{}
+\cventry{2019}{Euro Working Group on Transportation Meeting}{}{}{}{}
+\cventry{2017}{IEEE International Conference on Intelligent Transportation Systems}{}{}{}{}
+
+\section{Teaching Experience}
+
+\subsection{Classes}
+
+\cventry{2019}{Spatial Information Engineering I (partial)}{The University of Tokyo}{}{}{}
+\cventry{2018/2019}{Applied Project III (partial)}{The University of Tokyo}{}{}{}
+\cventry{2018/2019}{Fieldwork Exercise (partial)}{The University of Tokyo}{}{}{}
+\cventry{2018/2019}{Fieldwork in Spatial Information Engineering (partial)}{The University of Tokyo}{}{}{}
+\cventry{2011}{Infrastructure Planning and Design (teaching assistant)}{Tokyo Institute of Technology}{}{}{}
+
+\subsection{Supervision}
+
+\cvitem{Doctor (auxiliary)}{1 (Tokyo Institute of Technology)}
+\cvitem{Master (auxiliary)}{2 (Tokyo Institute of Technology)}
+\cvitem{Bachelor (auxiliary)}{4 (The University of Tokyo), 3 (Tokyo Institute of Technology)}
+\cvitem{Awards won by supervised students}{Outstanding Poster Presentation Award at the 11th International Conference of Eastern Asia Society for Transportation Studies (2015), Best Presentation Award at the 7th Regional Symposium on Infrastructure Development (2015), Outstanding Poster Award at the 59th Meeting of Infrastructure Planning and Management (2019), Paper Award at the Japan Society of Photogrammetry and Remote Sensing Reiwa 1st Fall Conference (2019)}
+
+\section{Publications}
+
+\bibliographystyle{cvbib_doi_title}
+\nobibliography{myworks,myworks_en}
+
+
+\subsection{Refereed International Journal Articles}
+
+\begin{etaremune}
+	\item \bibentry{Seo2019probefd}
+	\item \bibentry{Thaithatkul2018ridesharing_ijst}
+	\item \bibentry{seo2017ipp} (Selected paper from IATBR2015)
+	\item \bibentry{Lykov2017easts_journal}
+	\item \bibentry{Seo2017review}
+	\item \bibentry{Thaithatkul2015ridesharing_paper}
+	\item \bibentry{seo2015isttt_partc} (Selected paper from ISTTT21)
+	\item \bibentry{Seo2015probe} {\hfill\footnotesize\sffamily\bfseries [Best Paper Award]}
+	\item \bibentry{Fukuda2014pedestrian}
+	\item \bibentry{Narioka2013incidentb}
+\end{etaremune}
+
+\subsection{Refereed Japanese Journal Articles}
+
+\begin{etaremune}
+	\item \bibentry{瀬尾2018satellite_jste_en}
+	\item \bibentry{愛甲2017jsce_en}
+	\item \bibentry{和田2017jsce_en}
+	\item \bibentry{福田2017probe_en}
+	\item \bibentry{瀬尾2017ipp_en} {\hfill\footnotesize\sffamily\bfseries [Outstanding Paper Award]}
+	\item \bibentry{川崎2016probefd_en}
+	\item \bibentry{瀬尾2016probefd_en}
+	\item \bibentry{成岡2015incident_en} {\hfill\footnotesize\sffamily\bfseries [JSTE Paper Award]}
+	\item \bibentry{柳原2014carfollowing_en}
+	\item \bibentry{瀬尾2014experiment_en} {\hfill\footnotesize\sffamily\bfseries [Research Encouragement Award]}
+	\item \bibentry{瀬尾2013trafficstate_en}
+	\item \bibentry{成岡2013incidenta_en}
+	\item \bibentry{瀬尾2012pedestrian_en}
+\end{etaremune}
+
+\subsection{Refereed International Conference Presentations}
+
+\begin{etaremune}
+	\item \bibentry{seo2020istdm}%
+	\item \bibentry{Seo2020dta_ridesharing}%
+	\item \bibentry{Sakai2019itsc}
+	\item \bibentry{seo2019ewgt}
+	\item \bibentry{Fukuda2019trainfd}
+	\item \bibentry{seo2019trbmeeting}
+	\item \bibentry{seo2018satellite_itsc}
+	\item \bibentry{Thaithatkul2018ewgt}
+	\item \bibentry{Seo2018satellite_procedia}
+	\item \bibentry{Thaithatkul2018caspt}
+	\item \bibentry{Kusakabe2018iatbr}
+	\item \bibentry{seo2018ccat}
+	\item \bibentry{seo2017arz_ieee}
+	\item \bibentry{kawasaki2017probefd}
+	\item \bibentry{Lykov2017easts}
+	\item \bibentry{aiko2017ridesharing_procedia}
+	\item \bibentry{seo2017automated_procedia}
+	\item \bibentry{seo2017trainfd_trb}
+	\item \bibentry{Seo2016filters}
+	\item \bibentry{Thaithatkul2016hksts}
+	\item \bibentry{Seo2016train_hksts}
+	\item \bibentry{Thaithatkul2016heart}
+	\item \bibentry{Thaithatkul2017rideshare_procedia}
+	\item \bibentry{Seo2017probefd_procedia}
+	\item \bibentry{Thaithatkul2015ridesharingb}
+	\item \bibentry{Thaithatkul2015ridesharingc} {\hfill\footnotesize\sffamily\bfseries [Best Presentation Award]}
+	\item \bibentry{Ozaki2015image}
+	\item \bibentry{seo2015ieee} {\hfill\footnotesize\sffamily\bfseries [Best Paper Award]}
+	\item \bibentry{Thaithatkul2015ridesharing} {\hfill\footnotesize\sffamily\bfseries [Outstanding Poster Presentation Award]}
+	\item \bibentry{seo2015isttt_procedia}
+	\item \bibentry{Kusakabe2015ipp}
+	\item \bibentry{Kusakabe2014ipp}
+	\item \bibentry{nguyen2014seoprobe}
+	\item \bibentry{Narioka2013incidenta}
+	\item \bibentry{Seo2013probeb}
+	\item \bibentry{Seo2013probe}
+	\item \bibentry{Fukuda2012pedestrian}
+\end{etaremune}
+
+\subsection{Others}
+
+\begin{etaremune}
+	\item \bibentry{seo2018probefd_arxiv}, \href{http://arxiv.org/abs/1804.05927}{Published at arXiv}
+	\item \bibentry{瀬尾2017jste_mcml_en}
+	\item \bibentry{瀬尾2017jste_en}
+	\item \bibentry{Seo2017train_arxiv}, \href{https://arxiv.org/abs/1708.02147}{Published at arXiv}
+	\item \bibentry{Seo2015phd}
+\end{etaremune}
+
+
+
+
+\end{document}
+
