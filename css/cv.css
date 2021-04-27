@@ -20,6 +20,25 @@ body {
 	line-height: 1.6;
 }
 
+nav {
+	color: #000000;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-size: 125%;
+	padding: 5px;
+	font-weight: normal;
+	text-align: center;
+}
+
+nav a { 
+	color: #0000ff;
+	text-decoration: underline;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
 h1 {
 	  
 	color: #000000;
