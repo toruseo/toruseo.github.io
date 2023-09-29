@@ -23,22 +23,39 @@ gtag('config', 'UA-111714220-1');
 <body>
 <h1>UXsim: Python製のオープンソース交通流シミュレータ</h1>
 
-<nav>
+<!--<nav>
 <a href="index_en.html">English page</a>
-</nav>
+</nav>-->
 <h3>About</h3>
 
 <p>
     オープンソース交通流シミュレータUXsimのページです．
-    現在公開準備中です．
-    少々お待ち下さい．
+    最新版のシミュレータには<a href="https://github.com/toruseo/UXsim" target="_blank">Github</a>からアクセスできます．
+    書籍『マクロ交通流シミュレーション...』に掲載したバージョンも記録として<a href="https://github.com/toruseo/UXsim/tree/ver-book" target="_blank">Github</a>に保存しています．
 </p> 
+<p>
+	UXsimはPython製のオープンソース・フリーなマクロ・メソ交通流シミュレータです．
+	これは以下のモデルを組み合わせてネットワークの動的交通流を計算するものです：
+</p>
+<ul>
+	<li>Newellの単純追従モデル（Xモデル）</li>
+	<li>Lagrange版Incremental Node Model</li>
+	<li>Dynamic User Optimum型経路選択モデル（慣性付き）</li>
+</ul>
+
+<h3>デモ</h3>
+<figure>
+    <img src="img/gridnetwork_macro.gif" width="400">
+    <img src="img/gridnetwork_fancy.gif" width="400">
+	<figcaption>10km x 10kmの格子状ネットワークの2時間シミュレーション．左：リンク状態，右：一部車両軌跡</figcaption> 
+</figure>
+
 <h3>リンク</h3>
 <ul>
 	<li><a href="https://github.com/toruseo/UXsim" target="_blank">Githubでの公開ページ</a></li>
     <li><a href="https://toruseo.jp/" target="_blank">瀬尾亨個人HP</a></li>
     <li><a href="http://seo.cv.ens.titech.ac.jp" target="_blank">瀬尾研究室HP</a></li>
-    <li><a href="https://www.coronasha.co.jp/np/isbn/9784339052794/" target="_blank">解説書『マクロ交通流シミュレーション - 数学的基礎理論とPythonによる実装 -』</a></li>
+    <li><a href="https://www.coronasha.co.jp/np/isbn/9784339052794/" target="_blank">書籍『マクロ交通流シミュレーション - 数学的基礎理論とPythonによる実装 -』</a></li>
 <ul>
 
 </body>
