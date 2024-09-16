@@ -164,3 +164,30 @@ summary:hover {
   cursor: pointer;
   background-color: #EFEFEF;
 }
+
+
+.repo-preview {
+	margin-left:1em;
+	border: 1px solid #e1e4e8;
+	border-radius: 6px;
+	padding: 16px;
+	max-width: 400px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.repo-preview img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 3px;
+}
+
+.repo-preview h2 {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.repo-preview p {
+	color: #586069;
+	font-size: 14px;
+	margin-top: 5px;
+}
