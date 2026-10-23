@@ -1,81 +1,90 @@
-<!DOCTYPE html>
-	<html lang="ja">
-	<head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-111714220-1"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'UA-111714220-1');
-</script>
-
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Cache-Control" content="no-cache">
-<meta http-equiv="Expires" content="0">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
 <meta name="Author" content="Toru Seo">
-<meta name="viewport" content="width=device-width">
-<meta name="referrer" content="unsafe-url">
-<link rel="stylesheet" type="text/css" href="hp.css">
-<title>UXsim: An open source traffic simulator in Python</title>
+<meta name="description" content="Portal site for the traffic simulator UXsim">
+<title>UXsim: Python traffic simulation</title>
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/toruseo/UXsim/refs/heads/images/artworks/png/uxsim-icon-transparent-light.png">
+<link rel="stylesheet" href="assets/styles.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111714220-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-111714220-1');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "UXsim: Python traffic simulation",
+  "alternateName": ["UXsim", "UNsim"],
+  "url": "https://toruseo.jp/uxsim/"
+}
+</script>
 </head>
-
-<body>
-<h1>UXsim: An open source traffic simulator in Python</h1>
-
-<nav>
-<a href="index.html">Japanese page</a>
+<body data-page="home">
+<nav class="nav">
+  <a href="index_en.html" class="brand"><img class="brand-mark" src="https://raw.githubusercontent.com/toruseo/UXsim/refs/heads/images/artworks/png/uxsim-icon-transparent-light.png" alt=""><span class="brand-jp">UXsim: Python traffic simulation</span></a>  <div class="nav-links"><a href="index.html" class="lang-btn">JA</a></div>
 </nav>
-<h3>About</h3>
 
-<p>
-    This is the portal site for the open source traffic flow simulator <b>UXsim</b>. 
-    You can access the latest version of the simulator from <a href="https://github.com/toruseo/UXsim" target="_blank">GitHub</a>. 
-</p>
-
-<div class="repo-preview">
-    <a href="https://github.com/toruseo/UXsim">
-        <img src="https://opengraph.githubassets.com/1/toruseo/UXsim" alt="GitHub Repository Preview">
-        GitHub repository
-    </a>
+<main>
+<div class="hero">
+  <h1><em>UXsim</em>: An open source traffic simulator in Python</h1>
+  <figure>
+      <img src="https://raw.githubusercontent.com/toruseo/UXsim/refs/heads/images/artworks/png/uxsim-hero-transparent-light.png" width="600">
+  </figure>
 </div>
 
-
+<div>
 <p>
-	UXsim is an open-source, macroscopic and mesoscopic traffic flow simulator made with Python. 
-    It computes the dynamic traffic flow in a network by combining the following models:
-</p>
-<ul>
-	<li>Newell's simplified car-following model (X-model)</li>
-	<li>Lagrangian Incremental Node Model</li>
-	<li>Dynamic User Optimum route choice model (with inertia)</li>
-</ul>
-
-<p>
-	This site was established to keep the URL mentioned in the book valid for as long as possible
-    (For instance, if the Github URL had been included in the book, changes or termination of the service could render the link inaccessible).
-    For details about the simulator, please refer to the following specialized sites.
+  This is the portal site for the open source and free traffic flow simulator <b>UXsim</b> and related software.
+  You can access the latest version of the simulator from <a href="https://github.com/toruseo/UXsim" target="_blank">GitHub</a>.
+	This page collects the pages of UXsim and related simulators in one place.
+	For details, please refer to the dedicated sites and materials.
 </p>
 
-<ul>
-	<li><a href="https://github.com/toruseo/UXsim" target="_blank">UXsim's GitHub repository</a></li>
-	<li><a href="https://toruseo.github.io/UXsim/docs/" target="_blank">Technical reference for UXsim</a></li>
-	<li><a href="http://dx.doi.org/10.21105/joss.07617" target="_blank">A peer-reviewed paper in Journal of Open Source Software</a></li>
-	<li><a href="https://arxiv.org/pdf/2309.17114.pdf" target="_blank">arXiv preprint introducing an overview of UXsim</a></li>
-</ul>
+<p>
+	UXsim is an open source and free macroscopic and mesoscopic traffic flow simulator written in Python.
+  With Python coding, you can simulate large-scale traffic flow consisting of tens of thousands of vehicles in urban areas simply and quickly.
+</p>
 
-<h3>Demo</h3>
 <figure>
     <img src="img/gridnetwork_macro.gif" width="400">
     <img src="img/gridnetwork_fancy.gif" width="400">
-	<figcaption>2-hour simulation of a 10km x 10km grid network. Left: Link status, Right: Traces of some vehicles</figcaption> 
+	<figcaption>2-hour simulation of 60,000 vehicles by UXsim. Computation time is about 30 seconds. Left: link states, Right: trajectories of some vehicles</figcaption>
 </figure>
+</div>
 
-<h3>Related Links</h3>
+
+<h2>UXsim</h2>
+<ul>
+	<li><a href="https://github.com/toruseo/UXsim" target="_blank">GitHub repository</a></li>
+	<li><a href="https://toruseo.github.io/UXsim/docs/" target="_blank">Technical reference</a></li>
+	<li><a href="http://dx.doi.org/10.21105/joss.07617" target="_blank">Peer-reviewed paper in Journal of Open Source Software</a></li>
+	<li><a href="https://arxiv.org/pdf/2309.17114.pdf" target="_blank">arXiv preprint</a></li>
+</ul>
+
+<h2>UNsim</h2>
+
+<p>
+	UNsim is an advanced macroscopic traffic flow simulator.
+  Like UXsim, it is based on Python and has a similar syntax, but it supports GPU computation and automatic differentiation via JAX.
+  It enables ultra-fast parallel simulation that computes 1 million vehicles in a metropolitan area in 0.2 seconds, as well as optimization using automatic differentiation.
+</p>
+
+<ul>
+	<li><a href="https://github.com/toruseo/UNsim" target="_blank">GitHub repository</a></li>
+	<li><a href="https://toruseo.github.io/UNsim/" target="_blank">Technical reference</a></li>
+	<li><a href="https://arxiv.org/abs/2604.11380" target="_blank">arXiv preprint</a></li>
+</ul>
+
+<h2>Developer</h2>
 <ul>
     <li><a href="https://toruseo.jp/" target="_blank">Toru Seo Personal HP</a></li>
     <li><a href="http://seo.cv.ens.titech.ac.jp" target="_blank">Seo Lab HP</a></li>
-    <li><a href="https://www.coronasha.co.jp/np/isbn/9784339052794/" target="_blank">Japanese book "Macroscopic Traffic Simulation: Fundamental Mathematical Theory and Python Implementation"</a></li>
-<ul>
-</body>
-</html>
+</ul>
+
+</main></body></html>
